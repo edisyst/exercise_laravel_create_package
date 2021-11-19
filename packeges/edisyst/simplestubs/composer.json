@@ -1,0 +1,5 @@
+{
+    "name": "edisyst/simplestubs",
+    "description": "A package that can replace defaults Laravel stubs",
+    "require": {}
+}
