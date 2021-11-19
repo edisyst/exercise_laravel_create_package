@@ -1,14 +1,17 @@
 # Creating a package
 
+    https://www.youtube.com/watch?v=BzEskEyMsL4
+    https://www.youtube.com/watch?v=3HPTh-EMY2U
+
 ### Struttura
 ```
-/packages/edisyst/simplestubs
+/packages/edisyst/simplestubs/
 |- composer.json
-|- /src
+|- src/
     |- routes.php
     |- SimplestubsController.php
     |- SimplestubsServiceProvider.php
-    |- /views
+    |- views/
         |- add.blade.php
 ```
 
