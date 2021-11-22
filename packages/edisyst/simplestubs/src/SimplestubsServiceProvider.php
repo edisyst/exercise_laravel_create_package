@@ -3,6 +3,7 @@
 //namespace App\Providers;
 namespace Edisyst\Simplestubs;
 
+use Edisyst\Simplestubs\Console\Commands\StubsPublishCommand;
 use Illuminate\Support\ServiceProvider;
 
 class SimplestubsServiceProvider extends ServiceProvider
@@ -14,8 +15,7 @@ class SimplestubsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Edisyst\Simplestubs\SimplestubsController');
-        $this->loadViewsFrom(__DIR__ . '/views', 'simplestubs');
+        //
     }
 
     /**
@@ -25,6 +25,10 @@ class SimplestubsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__ . '/routes.php';
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                StubsPublishCommand::class,
+            ]);
+        }
     }
 }
