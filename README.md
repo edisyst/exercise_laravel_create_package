@@ -18,10 +18,10 @@
 Ogni volta che creo un file poi lo devo spostare là dentro e rinominare i namespace
 
 ### Workflow
-Inizializzo dentro il pkg `composer init`
+Inizializzo dentro il pkg `composer init` oppure lo creo a mano da un template di base 
 
 Nel **composer.json** del progetto aggiungo negli auto-load 
-`"Edisyst\\Simplestubs\\": "packeges/edisyst/simplestubs/src"`
+`"Edisyst\\Simplestubs\\": "packages/edisyst/simplestubs/src"`
 
 Lancio `composer dump-autoload`
 

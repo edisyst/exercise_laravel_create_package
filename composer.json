@@ -25,7 +25,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Edisyst\\Simplestubs\\": "packeges/edisyst/simplestubs/src"
+            "Edisyst\\Simplestubs\\": "packages/edisyst/simplestubs/src"
         }
     },
     "autoload-dev": {

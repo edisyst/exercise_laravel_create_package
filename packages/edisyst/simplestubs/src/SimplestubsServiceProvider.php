@@ -10,7 +10,7 @@ class SimplestubsServiceProvider extends ServiceProvider
     /**
      * Register services.
      *
-     * @return voidstubs
+     * @return void
      */
     public function register()
     {
